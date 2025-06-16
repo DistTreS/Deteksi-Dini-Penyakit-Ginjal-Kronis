@@ -1,6 +1,6 @@
-# ❤️ Heart Disease Risk Detection System
+# ❤️ Chronic Kidney Disease Risk Detection System
 
-Sistem deteksi dini risiko penyakit jantung kronis menggunakan Random Forest Algorithm.
+Sistem deteksi dini risiko penyakit ginjal kronis menggunakan Random Forest Algorithm.
 
 ## 🚀 Features
 
@@ -70,4 +70,4 @@ streamlit run app.py
 - **Data Processing**: Pandas, NumPy
 
 ---
-*Developed for early detection of chronic heart disease risk*
+*Developed for early detection of chronic Chronic Kidney Disease risk*

@@ -9,7 +9,7 @@ import plotly.graph_objects as go
 
 # Page configuration
 st.set_page_config(
-    page_title="Heart Disease Risk Detector",
+    page_title="Chronic Kidney Disease Risk Detector",
     page_icon="🫀",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -31,7 +31,7 @@ def interpret_risk(probability):
     risk_prob = probability[1]  # Probabilitas berisiko
     
     if risk_prob >= 0.8:
-        return "RISIKO TINGGI", "Segera konsultasi dokter spesialis jantung", "🔴", "#FF4B4B"
+        return "RISIKO TINGGI", "Segera konsultasi dokter spesialis Ginjal", "🔴", "#FF4B4B"
     elif risk_prob >= 0.6:
         return "RISIKO SEDANG", "Disarankan pemeriksaan lanjutan dalam 1-2 minggu", "🟡", "#FFB800"
     elif risk_prob >= 0.4:
@@ -99,8 +99,8 @@ if model is None or features is None:
     st.stop()
 
 # Header
-st.title("🫀 Heart Disease Risk Detection System")
-st.markdown("### Sistem Deteksi Dini Risiko Penyakit Jantung Kronis")
+st.title("🫀 Chronic Kidney Disease Risk Detection System")
+st.markdown("### Sistem Deteksi Dini Risiko Penyakit Ginjal Kronis")
 st.markdown("---")
 
 # Sidebar

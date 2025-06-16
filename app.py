@@ -99,7 +99,7 @@ if model is None or features is None:
     st.stop()
 
 # Header
-st.title("🫀 Chronic Kidney Disease Risk Detection System")
+st.title("🫘 Chronic Kidney Disease Risk Detection System")
 st.markdown("### Sistem Deteksi Dini Risiko Penyakit Ginjal Kronis")
 st.markdown("---")
 

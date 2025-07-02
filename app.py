@@ -19,7 +19,7 @@ st.set_page_config(
 @st.cache_resource
 def load_model():
     try:
-        model = joblib.load('heart_disease_model.joblib')
+        model = joblib.load('chronic_kidney_disease_model.joblib')
         features = joblib.load('selected_features.joblib')
         return model, features
     except:
@@ -262,7 +262,7 @@ else:
         st.download_button(
             label="📥 Download Template",
             data=excel_buffer.getvalue(),
-            file_name="heart_disease_template.xlsx",
+            file_name="chronic_kidney_disease_template.xlsx",
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
         )
     
@@ -390,7 +390,7 @@ else:
                     st.download_button(
                         label="📥 Download Hasil (Excel)",
                         data=excel_buffer.getvalue(),
-                        file_name=f"heart_disease_results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xlsx",
+                        file_name=f"chronic_kidney_disease_results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xlsx",
                         mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
                     )
                 
@@ -400,7 +400,7 @@ else:
                     st.download_button(
                         label="📥 Download Hasil (CSV)",
                         data=csv_buffer,
-                        file_name=f"heart_disease_results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
+                        file_name=f"chronic kidney disease_results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
                         mime="text/csv"
                     )
         
